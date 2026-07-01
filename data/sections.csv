@@ -1,0 +1,6 @@
+section_id,course_id,instructor_id,section_label,semester,attendance_method
+1,1,1,A,Fall-2026,rfid
+2,2,2,A,Fall-2026,biometric
+3,3,3,A,Fall-2026,manual
+4,4,4,A,Fall-2026,rfid
+5,5,5,A,Fall-2026,biometric
