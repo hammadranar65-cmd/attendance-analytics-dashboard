@@ -1,5 +1,5 @@
 """
-api.py — FastAPI backend that serves attendance data to the React frontend
+api.py – FastAPI backend that serves attendance data to the React frontend
 Run with: uvicorn api:app --reload --port 8000
 """
 
@@ -13,7 +13,8 @@ app = FastAPI(title="Attendance Analytics API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=["*"],
+    allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
