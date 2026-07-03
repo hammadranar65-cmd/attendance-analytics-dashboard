@@ -5,9 +5,9 @@ export default function Overview() {
   const [trends, setTrends] = useState([]);
 
   useEffect(() => {
-    fetch("http://https://attendance-api-3uy0.onrender.com/api/overview")
+    fetch("https://attendance-api-3uy0.onrender.com/api/overview")
       .then(r => r.json()).then(setOverview);
-    fetch("http://https://attendance-api-3uy0.onrender.com/api/weekly-trends")
+    fetch("https://attendance-api-3uy0.onrender.com/api/weekly-trends")
       .then(r => r.json()).then(setTrends);
   }, []);
 

@@ -4,7 +4,7 @@ export default function Summaries() {
   const [summaries, setSummaries] = useState({});
 
   useEffect(() => {
-    fetch("http://https://attendance-api-3uy0.onrender.com/api/summaries")
+    fetch("https://attendance-api-3uy0.onrender.com/api/summaries")
       .then(r => r.json()).then(setSummaries);
   }, []);
 

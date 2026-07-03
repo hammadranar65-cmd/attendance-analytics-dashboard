@@ -4,7 +4,7 @@ export default function Forecast() {
   const [forecast, setForecast] = useState([]);
 
   useEffect(() => {
-    fetch("http://https://attendance-api-3uy0.onrender.com/api/forecast")
+    fetch("https://attendance-api-3uy0.onrender.com/api/forecast")
       .then(r => r.json()).then(setForecast);
   }, []);
 
