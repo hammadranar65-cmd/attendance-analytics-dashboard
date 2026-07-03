@@ -4,7 +4,7 @@ export default function Anomalies() {
   const [anomalies, setAnomalies] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/anomalies")
+    fetch("http://https://attendance-api-3uy0.onrender.com/api/anomalies")
       .then(r => r.json()).then(setAnomalies);
   }, []);
 

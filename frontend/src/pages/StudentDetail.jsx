@@ -6,13 +6,13 @@ export default function StudentDetail() {
   const [detail, setDetail] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/students")
+    fetch("http://https://attendance-api-3uy0.onrender.com/api/students")
       .then(r => r.json()).then(setStudents);
   }, []);
 
   useEffect(() => {
     if (selected) {
-      fetch(`http://localhost:8000/api/student/${selected}`)
+      fetch(`http://https://attendance-api-3uy0.onrender.com/api/student/${selected}`)
         .then(r => r.json()).then(setDetail);
     }
   }, [selected]);

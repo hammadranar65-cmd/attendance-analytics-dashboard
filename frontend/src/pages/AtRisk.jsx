@@ -4,7 +4,7 @@ export default function AtRisk() {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/at-risk")
+    fetch("http://https://attendance-api-3uy0.onrender.com/api/at-risk")
       .then(r => r.json()).then(setStudents);
   }, []);
 
